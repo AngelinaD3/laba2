@@ -2,7 +2,7 @@ import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
-import TrafficLights from './TrafficLights'; // Импорт компонента со светофорами
+import TrafficLights from './TrafficLights'; 
 
 function App() {
   const [count, setCount] = useState(0);
@@ -19,12 +19,14 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       
-      {/* Блок со светофорами */}
+      {/*  */}
       <div className="card">
-        <h2>Светофоры</h2>
-        <TrafficLights />
-        
-        {/* Оригинальная кнопка счётчика */}
+        <h2>Демонстрація світлофорів</h2>
+        <TrafficLights /> {/*  */}
+      </div>
+
+      {/*  */}
+      <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
@@ -32,7 +34,7 @@ function App() {
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
-      
+
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
